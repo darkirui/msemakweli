@@ -1,0 +1,313 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.28571;
+    color: #333;
+}
+a{cursor: pointer;}
+.contentwrap{width: 90%;margin-right: auto;margin-left: auto;max-width: 1184px;}
+.tablediv{display: table;width: 100%;height: 100%;}
+.tablerowdiv{display: table-row;}
+.tablecelldiv{display: table-cell;}
+.topmenuwrap{height: 50px;}
+.topmenuwrap {font-weight: 500;font-size: 10px;}
+.sitetilte{font-size: 20px;font-weight: 900;font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
+.topmenuwrap .tablecelldiv{vertical-align: middle;text-align: left;}
+.primarymenusection .tablecelldiv{vertical-align: middle;}
+.primarymenusection{background: #2F2F2F;color: #fff;}
+.primarymenuwrap{height: 60px;}
+.primarymenusection a{color: #fff;font-weight: 300;}
+.userlogin{text-align: right;}
+.menuitems a{padding-right: 10px;padding-left: 10px;}
+.menuitems a:first-child{padding-right: 10px;padding-left: 0px;}
+.homebannercontentwrap{height: 350px;}
+.homebanner{background: url("../images/homebanner.jpg");background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.mainfilterlinks a{color: #2F2F2F;margin-right: 20px;margin-left: 20px;cursor: pointer;}
+.homebanner .tablecelldiv{vertical-align: middle;}
+.hometag{font-size: 25px;font-weight: 900;color: #fff;}
+.searchwrap{margin-top: 10px;}
+.homesearch{height: 50px;width: 100%;padding-right: 20px;padding-left: 20px;}
+.searchwrap{width: 500px;}
+.homesearchwrap{width: 100px;}
+.homesearchbtnwrap{width: 10%;}
+.homesearchbtn{height: 50px;width: 100px;text-align: center;background: #DA251C;color: #fff;border: 1px solid #DA251C;}
+.summarysectionwarp{height: 150px;}
+.summarysectionwarp .summarycontentcell{vertical-align: middle;text-align: center;width: 30%;}
+.summarycontentseparator{width: 5%;}
+.summaryvalue{font-weight: 900;font-size: 42px;font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;border-bottom: 1px solid #2F2F2F;margin-bottom: 10px;padding-bottom: 10px;color: #DA251C;}
+.footersection{background: #E3E3E3;padding-top: 20px;padding-bottom: 20px;}
+
+.withdropdown{position: relative;display: inline-block;}
+.menudropdown{position: absolute;padding-top: 25px;padding-bottom: 10px;display: none;width: 200px;}
+.dropdownlinkswrap{background: #2F2F2F;padding-top: 10px;padding-bottom: 10px;}
+.menudropdown a{display: block;}
+.dropdownmainlink{margin-left: 20px;}
+.menudropdown a{padding-left: 20px !important;padding-right: 20px !important;}
+.withdropdown:hover .menudropdown{display: block;}
+
+.userlogin .menudropdown{position: absolute;padding-top: 25px;padding-bottom: 10px;display: none;width: 180px;right: 0px;}
+.userlogin .dropdownlinkswrap{text-align: left;}
+
+.treatmentbannercontentwrap{height: 300px;}
+.mainfilterlinks a{color: #2F2F2F;margin-right: 20px;margin-left: 20px;}
+#indicatortotalbanner .tablecelldiv{vertical-align: middle;}
+.treatmentbannercontentwrap .tablecelldiv{text-align: center;color: #DA251C;}
+.contenttitle{font-size: 42px;font-weight: 900;color: #DA251C;font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
+.titleintroduction{font-weight:900;font-size: 30px;color: #2F2F2F;width: 200px;border-bottom: 3px solid #2F2F2F;margin: 0px auto;font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
+.leftcontent, .rightcontent{width: 15%;}
+.mainbody{width: 60%}
+.contentseparator{width: 2.5%;}
+.datatitle{color: #DA251C;font-weight: 900;}
+.dataname{width: 80%;}
+.datavalue{width: 20%;font-weight: 700;text-align: right;}
+.maincontentsection{padding-top: 30px;padding-bottom: 30px;}
+.leftcontentitem{margin-bottom: 20px;}
+
+.seasonalproducts .itemimage{width: 100% !important;height: 100px;text-align: center;vertical-align: bottom;margin: 0px auto;}
+.productsdisplay .itemimage{width: 100% !important;height: 100px;text-align: center;vertical-align: bottom;margin: 0px auto;}
+.seasonalproducts .itemimage img, .productsdisplay .itemimage img{height: 100px;width: auto;}
+.seasonalproducts{background: #fff;border: 0.5px solid #DCDEE3;margin-bottom: 20px;}
+.seasonheader{text-align: center;font-weight: 700;font-size: 16px;padding-top: 20px;background: #f2f3f7;}
+.seasonheader a{font-size: 16px;font-weight: 700;}
+.leftcontent, .mainbody, .rightcontent{vertical-align: top;}
+.indicatortotal{width: 200px;margin: 0px auto;background: rgba(255,255,255,0.5);}
+
+.pyramidcontainer{padding-bottom: 20px;}
+.fixedcontent{position: fixed;top: 60px;}
+.leftcontentitem a{display: block;color: #2F2F2F;}
+.indicatorbanner .tablecelldiv{vertical-align: middle;}
+.indicatorbannercontentwrap .tablecelldiv{text-align: center;color: #DA251C;}
+.treatmentmenuwrap, .sectionmenuwrap{text-align: center;margin-top: 10px;background: #f2f3f7;padding: 10px;}
+.treatmentmenuwrap a, .sectionmenuwrap a{color: #DA251C;margin-right: 10px;margin-left: 10px;cursor: pointer;}
+.backbutton{float: left;}
+.filterbutton{float: right;}
+.fixtreatmentmenu{position: fixed;top: 0px;width: 100%;margin: 0px;z-index: 999;}
+.activelink{text-decoration: underline;}
+.mainbodyloading{display: none;}
+.mainbodyloading img{width: 100%;}
+.txnewbanner{background: url("../images/txnewbanner.jpg");background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.tisbanner{background: url("../images/transferind.jpg");background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.txrttbanner{background: url("../images/rtts.jpg");background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.deathsbanner{background: url("../images/deathsbanner.jpg");background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.tosbanner{background: url("../images/to.jpg");background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.ltfubanner{background: url("../images/ltfubanner.jpg");background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.txcurrbanner{background: url("../images/medicine.jpg");background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.serverbanner{background: url("../images/network2.jpg");background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.reportbanner{background: url("../images/homebanner6.jpg");background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.queriesbanner{background: url("../images/queries.jpg");background-repeat: no-repeat;background-size: cover;background-position: center center;}
+
+
+
+.uploadcontainer{text-align: center;}
+.uploadcontainer span{display: block;text-align: center;}
+.uploadicon{font-size: 40px;}
+.uploadcontainer label{display: block;background: #f2f3f7;padding: 10px;border: 2px solid #E3E3E3;cursor: pointer;}
+.ajax-file-upload-statusbar {border-bottom: 1px solid #F2F3F7;width: 100%;text-align: left;}
+.ajax-file-upload-filename {height: auto;width: 250px;text-align: left;font-size: 9px;}
+.ajax-file-upload-filesize {width: 50px;height: auto;margin: 0 5px 5px 0px;display: inline-block;vertical-align:middle;}
+.ajax-file-upload-progress {margin: 5px 10px 5px 0px;position: relative;width: 250px;border: 1px solid #ddd;padding: 1px;display: inline-block;color:#FFFFFF;}
+
+.ajax-file-upload-progress, .ajax-file-upload-filename{display: inline-block;vertical-align: middle;}
+
+.ajax-file-upload-bar {background-color: #A5D7A2;width: 0;height: 10px;color:#FFFFFF;font-size: 8px;}
+.ajax-file-upload-percent {position: absolute;display: inline-block;top: 3px;left: 48%}
+.ajax-file-upload-red {background-color: #e4685d;display: inline-block;color: #fff;font-weight: normal;cursor: pointer;vertical-align: middle;font-size: 9px;padding: 0px 10px;}
+.ajax-file-upload-green {margin: 0;padding: 0;display: inline-block;color: #77b55a;font-weight: normal;text-decoration: none;vertical-align: middle;font-size: 8px;}
+.ajax-file-upload {padding-top: 10px;padding-bottom: 10px;}
+.ajax-file-upload:hover {background: #E3E3E3;padding-top: 10px;padding-bottom: 10px;color: #DA251C;}
+.ajax-upload-dragdrop{border:2px dotted #A5A5C7;width:420px;color: #DADCE3;text-align:left;vertical-align:middle;margin: 0px auto;}
+.state-hover{border:2px solid #A5A5C7;}
+.ajax-file-upload-container{margin:20px 0px 20px 0px;}
+
+
+.restorestatus{animation: blinker 1s linear infinite;}
+@keyframes blinker { 50% { opacity: 0; }}
+.databaselist{font-size: 11px;}
+.tablerowheader{font-weight: 700;background: #F2F3F7;}
+.databaselist .tablecelldiv{padding: 2px 5px;}
+.tablerowbody:nth-child(odd) {background: #EFF0F1;}
+.facilitynamecell{color: #DA251C;}
+.patientsourcessection{font-size: 10px;}
+.patientsourcessection .tablecelldiv{border-bottom: 0.5px solid #DCDEE3;padding-top: 4px;padding-bottom: 4px;}
+.leftcontentitem .tablediv{font-size: 10px;}
+
+.leftcoltotalclients{border-bottom: 3px solid #2F2F2F;}
+.leftcoltotalclients .titleintroduction, .leftcoltotalclients .contenttitle{display: table-cell;font-size: 16px;width: 50%;text-align: center;border: 0px;width: 80px;}
+.maindeathcauses{font-weight: 800;border-bottom: 1px solid #2F2F2F !important;padding-top: 10px !important;}
+.subdeathcauses{padding-left: 20px;}
+
+.servicebannercontentwrap{height: 300px;}
+.servicebannercontentwrap .tablecelldiv{text-align: center;color: #DA251C;}
+.selecttimespanwrap{background: #F2F3f7}
+.selecttimespancontainer{width: 50%;margin: 0px auto;padding: 10px;}
+.selecttimespancontainer label{font-weight: 100;font-size: 10px;}
+.selecttimespancontainer .tablecelldiv{vertical-align: middle;}
+/*.selecttimespancontainer .selectreporttype{vertical-align: middle;}*/
+.selecttimespancontainer label{vertical-align: middle;}
+#reportssummarywrap .seasonheader{font-size: 12px;text-align: left;padding: 10px !important;}
+.productcategorylink{padding: 10px;text-align: center;}
+.refreshdatabtn{background: #DA251C;color: #ffff;border: 1px solid #DA251C;font-size: 10px;}
+.refreshdatabtn:hover{background: #2F2F2F;color: #ffff;border: 1px solid #2F2F2F;font-size: 10px;}
+.indicatorwrap{display: grid;grid-template-columns: repeat(10, 1fr);grid-gap: 5px;}
+.indicatoritem{text-align: center;width: 100px;}
+.indicatortitle{font-weight: 700;font-size: 10px;background: #F1F9F7;}
+.indicatorbody{text-align: left;padding: 5px;font-size: 10px;}
+.indicatorbody span{display: block;}
+
+.datarefreshstatus{background: #DA251C;color: #fff;width: 400px;position: fixed;bottom: 0px;right: 0px;text-align: center;padding: 10px;font-size: 12px;display: none;}
+.datarefreshstatus i{font-size: 12px;}
+.reportdisplaytype{text-align: center;padding: 10px;}
+.reportdisplaytype a{color: #DA251C;margin-right: 10px;margin-left: 10px;cursor: pointer;}
+.selectedreportloading{text-align: center;display: none;}
+.selectedreportloading img{width: 450px;}
+.trendindicators{background: #F0F0F0;}
+.trendindicators a{display: block;color: #DA251C;padding-right: 10px;padding-left: 10px;cursor: pointer;padding-top: 5px;padding-bottom: 5px;}
+.trendswrap .tablecelldiv{vertical-align: top;}
+.trendlinecontainer{text-align: center;background: #FAFAFA;}
+.trendindicatorstablecell{background: #F0F0F0;}
+.trenddetailslink{background: #F0F0F0;}
+.trendindicatorstablecell{width: 15%;}
+.trendindicatorcharts{width: 85%;}
+canvas{width: 100% !important;}
+.trendloading{text-align: center;}
+.trendloading{display: none;background: #FAFAFA;}
+.adolescentsdatavalues{padding-top: 20px;color: #939496;}
+
+.patientsourceswrap{max-height: 200px;border: 0.5px solid #F2F3F7;overflow-y: scroll;padding: 5px;}
+.deathcauseswrap{max-height: 300px;border: 0.5px solid #F2F3F7;overflow-y: scroll;padding: 5px;}
+.downloadssection button{background: transparent;border: none;margin-top: 10px;border-bottom: 1px solid #DA251C;}
+.itemdownload label{font-weight: 400;margin-left: 5px;}
+.downloadmainname{color: #DA251C;}
+.locationfiltersection{max-height: 270px;text-align: left;padding: 10px 30px;overflow-y: scroll;}
+.backgroundstatus{margin-top: 30px;color: #DA251C;}
+.filterselectall{border-bottom: 1px solid #DA251C;}
+.countyreportstatus,.regionreportstatus,.subcountyreportstatus,.facilityreportstatus{color: #DA251C;float: left;}
+/*.specificdeathcausesdropdown{display: none;position: absolute;}*/
+/*.patientsourcessection .tablerowdiv{position: relative;}
+.patientsourcessection .tablerowdiv:hover .specificdeathcausesdropdown{display: block;}*/
+
+.periodnavigationbar{background: #DA251C;color:#fff;}
+.navigaterightwrap, .navigateleftwrap{width: 15%;text-align: center;padding-top: 10px;padding-bottom: 10px;background: #F65959;}
+.periodbody{width: 70%;text-align: center;font-size: 10px;padding-top: 10px;padding-bottom: 10px;}
+.reportingperiodnavigationwrap{margin-bottom: 10px;}
+.reportingperiodinfo{font-size: 8px;background: #6a6b6c;color: #fff;text-align: center;}
+.loginlink{cursor: pointer;}
+.btn-primary{background: #DA251C;border: 1px solid #DA251C;}
+.btn-primary:hover{background: #F65959;border: 1px solid #F65959;}
+.btn-secondary{background: #2F2F2f;border: 1px solid #2F2F2f;color: #fff;}
+.btn-secondary:hover{background: #555555;border: 1px solid #555555;color: #fff;}
+.officedetails{border: 1px solid #DA251C;padding: 5px;text-align: center;}
+.officedetails label{padding-right: 5px;}
+.selectpicker{width: 100%;}
+.signupselectitem{margin-bottom: 10px;}
+#actionsavemoredetails{display: none;}
+#grpfacility, #grpregion, #grpreasonforaccess{display: none;}
+.accountapprovalinfo{padding: 30px;text-align: center;}
+.usercreatestatus, .userloginstatus{color: #DA251C;}
+.approveuserdetailssection{margin-bottom: 10px;font-size: 15px;font-weight: 800;color: #DA251C;}
+
+/*** query body ***/
+.queryleftcol{width: 15%;}
+.leftcolbody{padding: 5px;border: 1px solid #F0F0F0;}
+.queryleftcol{background: #F0F0F0;}
+.querytoprows{background: #E7E7E8;padding: 5px;}
+.querytablestitle{background: #F7F7F7;}
+.querydatabasetitle{border-right: 1px solid #F0F0F0;}
+.querysectionwrap{border: 1px solid #E7E7E8;}
+.querytableslist{max-width: 235px;max-height:500px;overflow-x: scroll;overflow-y: scroll;}
+
+.blobs-container {display: flex;text-align: right;justify-content: flex-end;}
+.locationfiltersection .blobs-container {display: flex;text-align: right;justify-content: center;}
+.blob {background: black;border-radius: 50%;box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);height: 5px;width: 5px;transform: scale(1);
+	animation: pulse-black 2s infinite;}
+@keyframes pulse-black {
+  0% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);}
+  70% {transform: scale(1);box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);}
+  100% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);}
+}
+.blob.white {background: white;box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);animation: pulse-white 2s infinite;}
+
+@keyframes pulse-white {
+  0% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);}
+  70% {transform: scale(1);box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);}
+  100% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
+}
+.blob.red {background: rgba(255, 82, 82, 1);box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);animation: pulse-red 2s infinite;}
+@keyframes pulse-red {
+  0% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);}
+  70% {transform: scale(1);box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);}
+  100% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);}
+}
+.blob.orange {background: rgba(255, 121, 63, 1);box-shadow: 0 0 0 0 rgba(255, 121, 63, 1);animation: pulse-orange 2s infinite;}
+@keyframes pulse-orange {
+  0% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(255, 121, 63, 0.7);}
+  70% {transform: scale(1);box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);}
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);}
+}
+.blob.yellow {background: rgba(255, 177, 66, 1);box-shadow: 0 0 0 0 rgba(255, 177, 66, 1);animation: pulse-yellow 2s infinite;}
+@keyframes pulse-yellow {
+  0% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(255, 177, 66, 0.7);}
+  70% {transform: scale(1);box-shadow: 0 0 0 10px rgba(255, 177, 66, 0);}
+  100% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(255, 177, 66, 0);}
+}
+.blob.blue {background: rgba(52, 172, 224, 1);box-shadow: 0 0 0 0 rgba(52, 172, 224, 1);animation: pulse-blue 2s infinite;}
+@keyframes pulse-blue {
+  0% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);}
+  70% {transform: scale(1);box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);}
+  100% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);}
+}
+.blob.green {background: rgba(51, 217, 178, 1);box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);animation: pulse-green 2s infinite;}
+@keyframes pulse-green {
+  0% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);}
+  70% {transform: scale(1);box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);}
+  100% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);}
+}
+.blob.purple {background: rgba(142, 68, 173, 1);box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);animation: pulse-purple 2s infinite;}
+@keyframes pulse-purple {
+  0% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.7);}
+  70% {transform: scale(1);box-shadow: 0 0 0 10px rgba(142, 68, 173, 0);}
+  100% {transform: scale(0.95);box-shadow: 0 0 0 0 rgba(142, 68, 173, 0);}
+}
+
+.indicatorloader {
+  border:2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #DA251C;
+  width: 10px;
+  height:10px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: inline-block;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
