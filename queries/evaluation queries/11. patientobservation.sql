@@ -1,0 +1,25 @@
+drop table if exists patientobservation;
+CREATE TABLE `patientobservation` (
+  `id` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `facilityname` varchar(255) DEFAULT NULL,
+  `personid` int(6) DEFAULT NULL,
+  `doneeac` varchar(255) DEFAULT NULL,
+  `donecageaid` varchar(255) DEFAULT NULL,
+  `stable` varchar(255) DEFAULT NULL,
+  `allergies` varchar(255) DEFAULT NULL,
+  `drugreactions` varchar(255) DEFAULT NULL,
+  `examinationfinding` varchar(255) DEFAULT NULL,
+  `systemexamination` varchar(255) DEFAULT NULL,
+  `complaints` varchar(255) DEFAULT NULL,
+  `cervicalcancer` varchar(255) DEFAULT NULL,
+  `chronicillness` varchar(255) DEFAULT NULL,
+  `iptstatus` varchar(255) DEFAULT NULL,
+  `tbstatus` varchar(255) DEFAULT NULL,
+  `oispresent` varchar(255) DEFAULT NULL,
+  `reportingtimespan` varchar(255) DEFAULT NULL,
+  `reportingperiod` varchar(255) DEFAULT NULL,
+  `refreshdate` datetime DEFAULT NULL,
+  `refreshedby` int(6) DEFAULT NULL,
+  `voided` int(6) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;

@@ -1,0 +1,11 @@
+insert into accessprivileges(privilegename)values("Upload Databases");
+insert into accessprivileges(privilegename)values("Approve Users");
+insert into accessprivileges(privilegename)values("Run Queries");
+insert into accessprivileges(privilegename)values("Download Line-lists");
+insert into accessprivileges(privilegename)values("Download Reports");
+insert into accessprivileges(privilegename)values("Run Validations");
+insert into accessprivileges(privilegename)values("Analytics and Interventions");
+insert into accessprivileges(privilegename)values("Service Areas");
+insert into accessprivileges(privilegename)values("Manage Users");
+insert into accessprivileges(privilegename)values("Refresh Data");
+insert into accessprivileges(privilegename)values("Delete Dbs");

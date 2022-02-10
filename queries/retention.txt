@@ -1,0 +1,7 @@
+select cohort.*,tx.personid from(
+	select * from patientbaselineinfo where artstartdate >= '2020-07-01' and artstartdate <= '2020-09-30'
+)cohort left join (
+	select * from patienttxcurr where reportingperiod = '2021-09-30' and voided = 0
+)tx
+on cohort.facilityname = tx.facilityname and cohort.personid = tx.personid
+where tx.personid is not null

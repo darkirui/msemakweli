@@ -1,0 +1,33 @@
+select facilitydetails.*,pbd.cccnumber,pbd.gender,lvd.ageatlastvisit,pbi.hivenrollmentdate,lvd.lastvisitdate,
+vls.lastvldate,vls.lastvlresult,
+case when ovc.personid is not null then 'Yes' else 'no' end as enrolledtoovc,
+ovc.ovcenrollmentdate,ovc.implementingpartner,ovc.ovcmodel,ovc.cpmisnumber
+ from(
+	select facilityname,personid from patienttxcurr where reportingperiod = 'august2021' and voided = 0
+)tx left join(
+	select facilityname,personid,ageatlastvisit,lastvisitdate from patientlastvisitdetails where reportingperiod = 'august2021' and voided = 0
+    group by facilityname,personid
+)lvd on tx.facilityname = lvd.facilityname and tx.personid = lvd.personid 
+left join(
+	select * from patientovc group by facilityname,personid
+)ovc on tx.facilityname = ovc.facilityname and tx.personid = ovc.personid
+left join(
+	select * from personbasicdetails group by facilityname,personid
+)pbd on tx.facilityname = pbd.facilityname and tx.personid = pbd.personid
+left join(
+	select * from patientbaselineinfo group by facilityname,personid
+)pbi on tx.facilityname = pbi.facilityname and tx.personid = pbi.personid
+left join(
+	select * from patientlastvl group by facilityname,personid
+)vls on tx.facilityname = vls.facilityname and tx.personid = vls.personid
+left join(
+	SELECT f.facilityname,f.mflcode,c.countyname,sc.subcountyname,r.regionname FROM facility f 
+	left join countylinkfacilities clf ON f.id = clf.facilityid
+	left join county c ON c.id = clf.countyid
+	left join subcountylinkfacilities slf ON f.id = slf.facilityid
+	left join subcounty sc ON sc.id = slf.subcountyid
+	left join regionlinkfacilities rlf ON f.id = rlf.facilityid
+	left join region r ON r.id = rlf.regionid
+)facilitydetails on tx.facilityname = facilitydetails.facilityname
+where lvd.ageatlastvisit < 20
+

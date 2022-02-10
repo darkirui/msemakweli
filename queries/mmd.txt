@@ -1,0 +1,21 @@
+
+select report.facilityname,report.personid,visits.ageatlastvisit,triage.lastweight,art.lastregimen,art.regimenduration,
+art.quantitydispensed,art.regimenfrequency,art.regimendispensedate,
+vls.lastvlresult,vls.lastvldate
+from(
+	select * from patienttxcurr where reportingperiod = '2021-09-30' and voided = 0
+)report left join(
+	select * from patientlastvisitdetails where reportingperiod = '2021-09-30' and voided = 0 group by facilityname,personid
+)visits on report.facilityname = visits.facilityname and report.personid = visits.personid
+left join(
+	select * from patientlasttriage where reportingperiod = '2021-09-30' and voided = 0 group by facilityname,personid
+)triage on report.facilityname = triage.facilityname and report.personid = triage.personid
+left join(
+	select * from patientlastart where reportingperiod = '2021-09-30' and voided = 0 group by facilityname,personid
+)art on report.facilityname = art.facilityname and report.personid = art.personid
+left join(
+	select * from patientlastvl where reportingperiod = '2021-09-30' and voided = 0 group by facilityname,personid
+)vls on report.facilityname = vls.facilityname and report.personid = vls.personid
+-- where art.regimenduration >= 90
+-- where visits.ageatlastvisit < 15 and triage.lastweight < 20 and TIMESTAMPDIFF(MONTH, vls.lastvldate, '2021-09-30') < 13
+-- and cast(vls.lastvlresult as decimal) >= 1000 and art.lastregimen like '%LPV%'

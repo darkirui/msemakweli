@@ -1,0 +1,13 @@
+select person_id,
+SUM(CASE WHEN daysdefaulted > 1 and daystoapp > 14 THEN 1 ELSE 0 END) AS 'MissedTimes',
+SUM(CASE WHEN daysdefaulted > 30 and daystoapp > 14 THEN 1 ELSE 0 END) AS 'LTFUTimes'
+FROM
+(
+select *,DATEDIFF(postvisitdate, appointmentdate) daysdefaulted,DATEDIFF(appointmentdate,previsitdate) daystoapp from(
+select person_id,obs_datetime,value_datetime as appointmentdate,
+(select date_started from visit where patient_id = person_id and date_started >= value_datetime order by date_started asc limit 1) postvisitdate,
+(select date_started from visit where patient_id = person_id and date_started < value_datetime order by date_started desc limit 1) previsitdate
+from joseph0ycm.obs as o where concept_id = 5096 and value_datetime < '2021-10-01'
+and o.voided = 0 
+)allresults
+)alldata GROUP BY person_id

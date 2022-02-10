@@ -1,0 +1,27 @@
+select prepid.identifier as prepid,enrollment.*,pn.given_name,pn.family_name,visits.LastVisitDate,visits.NextAppointmentDate from(
+	select patient_id,encounter_datetime as enrollmnetdate from encounter where encounter_type = 32
+    and voided = 0
+)enrollment left join(
+	select * from person_name where voided = 0
+)pn on enrollment.patient_id = pn.person_id
+left join(
+	SELECT * FROM(
+	SELECT @row_no := IF(@prev_val = t.person_id, @row_no + 1, 1) AS row_number
+	   ,@prev_val := t.person_id AS personcheck
+	   ,t.*
+	FROM (
+		SELECT o.person_id,o.obs_datetime AS LastVisitDate,o.value_datetime AS NextAppointmentDate,
+		o.concept_id,DATE_ADD(o.value_datetime, INTERVAL 30 DAY) AS defaultingday,o.encounter_id,e.form_id,o.date_created
+		FROM obs o LEFT JOIN  encounter e ON o.encounter_id = e.encounter_id
+		WHERE concept_id = 5096 and o.voided = 0 
+		order by obs_datetime desc 
+	) t,
+	  (SELECT @row_no := 0) x,
+	  (SELECT @prev_val := '') y
+	ORDER BY t.person_id ASC,t.NextAppointmentDate DESC
+	)appointments WHERE row_number = 1
+)visits on visits.person_id = enrollment.patient_id
+left join(
+	select patient_id,identifier from patient_identifier where voided = 0 and identifier_type = 16
+)prepid on prepid.patient_id = enrollment.patient_id
+
